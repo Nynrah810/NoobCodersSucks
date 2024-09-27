@@ -11,9 +11,9 @@ async function submit(body, attempt) {
 	method: 'post',
 	url: 'https://stepik.org/api/submissions',
 	headers: {
-		'Cookie': '_gcl_au=1.1.1505129101.1723805659; tmr_lvid=715a49b5d0b510c05c8d562292ee4cf4; tmr_lvidTS=1723805659515; _ym_uid=1723805661952285001; _ym_d=1723805661; csrftoken=rpZcWXDtDQb5UewpBKy0JX6FsEDsnT32uQlFMTYWrAP5irULCGj6nBSzre9ouXW9; sessionid=39puoym3qw76qenm279jhfzk7kdacdff; tmr_lvid=715a49b5d0b510c05c8d562292ee4cf4; tmr_lvidTS=1723805659515; _gid=GA1.2.1403774888.1727349454; domain_sid=_UP8T_FfL-bBxrs7FdnfM%3A1727349454186; _ym_isad=1; _ga_3YHTYDHHZK=GS1.1.1727415438.67.1.1727415439.59.0.0; tmr_detect=1%7C1727415439305; _ga=GA1.2.1538453944.1723805659; _gat=1; _ga_25GCGTWN8K=GS1.2.1727415440.59.1.1727417658.59.0.0',
+		'Cookie': 'тут ваши куки',
 		'Referer': 'https://stepik.org/lesson/739167/step/15?unit=740810',
-		'X-Csrftoken': 'rpZcWXDtDQb5UewpBKy0JX6FsEDsnT32uQlFMTYWrAP5irULCGj6nBSzre9ouXW9'
+		'X-Csrftoken': 'тут ваш токен'
 	},
 	data: body
 	})
@@ -27,11 +27,11 @@ async function submit(body, attempt) {
 	const 
 		getRes = await axios({
 			method: 'get',
-			url: 'https://stepik.org/api/submissions?limit=1&order=desc&step=3074725&user=934636828',
+			url: 'https://stepik.org/api/submissions?limit=1&order=desc&step=3074725&user=тут айди юзера',
 			headers: {
-				'Cookie': '_gcl_au=1.1.1505129101.1723805659; tmr_lvid=715a49b5d0b510c05c8d562292ee4cf4; tmr_lvidTS=1723805659515; _ym_uid=1723805661952285001; _ym_d=1723805661; csrftoken=rpZcWXDtDQb5UewpBKy0JX6FsEDsnT32uQlFMTYWrAP5irULCGj6nBSzre9ouXW9; sessionid=39puoym3qw76qenm279jhfzk7kdacdff; tmr_lvid=715a49b5d0b510c05c8d562292ee4cf4; tmr_lvidTS=1723805659515; _gid=GA1.2.1403774888.1727349454; domain_sid=_UP8T_FfL-bBxrs7FdnfM%3A1727349454186; _ym_isad=1; _ga_3YHTYDHHZK=GS1.1.1727415438.67.1.1727415439.59.0.0; tmr_detect=1%7C1727415439305; _ga=GA1.2.1538453944.1723805659; _gat=1; _ga_25GCGTWN8K=GS1.2.1727415440.59.1.1727417658.59.0.0',
+				'Cookie': 'тут ваши куки',
 				'Referer': 'https://stepik.org/lesson/739167/step/15?unit=740810',
-				'X-Csrftoken': 'rpZcWXDtDQb5UewpBKy0JX6FsEDsnT32uQlFMTYWrAP5irULCGj6nBSzre9ouXW9'
+				'X-Csrftoken': 'тут ваш токен'
 			}
 		})
 		getStatus = getRes.data.submissions[0].status
